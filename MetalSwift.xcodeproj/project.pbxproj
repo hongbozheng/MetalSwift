@@ -14,6 +14,7 @@
 		306D72041EDA158C0007264C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306D72021EDA158C0007264C /* LaunchScreen.storyboard */; };
 		306D720F1EDA158C0007264C /* MetalSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D720E1EDA158C0007264C /* MetalSwiftTests.swift */; };
 		306D721A1EDA158C0007264C /* MetalSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D72191EDA158C0007264C /* MetalSwiftUITests.swift */; };
+		306D72281EDA18170007264C /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 306D72271EDA18170007264C /* Shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		306D72151EDA158C0007264C /* MetalSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		306D72191EDA158C0007264C /* MetalSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalSwiftUITests.swift; sourceTree = "<group>"; };
 		306D721B1EDA158C0007264C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306D72271EDA18170007264C /* Shader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				306D71F91EDA158C0007264C /* AppDelegate.swift */,
 				306D71FB1EDA158C0007264C /* ViewController.swift */,
+				306D72271EDA18170007264C /* Shader.metal */,
 				306D71FD1EDA158C0007264C /* Main.storyboard */,
 				306D72001EDA158C0007264C /* Assets.xcassets */,
 				306D72021EDA158C0007264C /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					306D71F51EDA158C0007264C = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = TRVL3RB274;
 						ProvisioningStyle = Automatic;
 					};
 					306D72091EDA158C0007264C = {
@@ -259,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306D72281EDA18170007264C /* Shader.metal in Sources */,
 				306D71FC1EDA158C0007264C /* ViewController.swift in Sources */,
 				306D71FA1EDA158C0007264C /* AppDelegate.swift in Sources */,
 			);
@@ -414,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TRVL3RB274;
 				INFOPLIST_FILE = MetalSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = danny.MetalSwift;
@@ -426,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TRVL3RB274;
 				INFOPLIST_FILE = MetalSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = danny.MetalSwift;
@@ -507,6 +514,7 @@
 				306D72201EDA158C0007264C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		306D72211EDA158C0007264C /* Build configuration list for PBXNativeTarget "MetalSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +523,7 @@
 				306D72231EDA158C0007264C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		306D72241EDA158C0007264C /* Build configuration list for PBXNativeTarget "MetalSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +532,7 @@
 				306D72261EDA158C0007264C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
